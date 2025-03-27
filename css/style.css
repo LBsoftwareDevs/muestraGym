@@ -2,6 +2,8 @@
 #bodyContainer{
   width: 100%;
   overflow: hidden;
+  background-color: rgba(3,3,3,0.7);
+  padding-bottom: 0;
 }
 
 #menuContainer{
@@ -13,6 +15,17 @@
   z-index: 1000;
 }
 
+#aboutUsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  h2{
+    margin-bottom: 5%;
+  }
+}
+
 #instructorsTitleContainer{
   background: none;
   display: flex;
@@ -21,6 +34,31 @@
   justify-content: center;
   div{
     color: rgb(255,130,10);
+  }
+}
+
+#instructorPresentationContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructorCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  color: rgb(220,220,220);
+}
+
+.instructorPresentationIMG{
+  img{
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -49,6 +87,104 @@
 
 #socialMediaLogo:hover{
   cursor: pointer;
+}
+
+@media(max-width: 320px){
+  #presentationContainer{
+    height: 80vh;
+  }
+
+  #aboutUsContainer{
+    height: 45vh;
+  }
+
+  #aboutUsIMG{
+    display: none;
+  }
+
+  #aboutUsDownContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    img{
+      display: none;
+    }
+  }
+
+  .galleryIMG{
+    display: none;
+  }
+
+  #footerLogoContainer{
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  #socialMediaLogo{
+    width: 20%;
+  }
+}
+
+@media(min-width: 321px) and (max-width: 480px){
+  #presentationContainer{
+    min-height: 500px;
+  }
+
+  #aboutUsContainer{
+    height: 45vh;
+  }
+
+  #aboutUsIMG{
+    display: none;
+  }
+
+  #aboutUsDownContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    img{
+      display: none;
+    }
+  }
+
+  .galleryIMG{
+    display: none;
+  }
+
+  #footerLogoContainer{
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  #socialMediaLogo{
+    width: 15%;
+  }
+}
+
+@media(min-width: 400px){
+  .instructorCard{
+    overflow: hidden;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h4{
+      font-size: large;
+      color: orange;
+    }
+    p{
+      width: 100%;
+      max-height: 160px;
+      font-size: small;
+    }
+  }
+
+  .instructorPresentationIMG{
+    min-width: 150px;
+    max-width: 150px;
+  }
 }
 
 
@@ -227,10 +363,6 @@ a, a:hover {
   position: relative;
   padding: 50px 0;
   margin: 70px 0;
-  background: url("../images/logoBF.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000;
 }
 .fh5co-content-box .trainers .bg-50 {
   background: rgba(0, 0, 0, 0.3);

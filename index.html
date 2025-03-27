@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div id="bodyContainer" class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/ring.jpg">
+<div id="bodyContainer" class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll">
   <nav id="menuContainer" class="navbar navbar-expand-md navbar-dark">
     <div class="container"> 
       <!-- Brand --> 
@@ -33,7 +33,7 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div id="presentationContainer" class="container">
     <div class="fh5co-banner-text-box">
       <div class="quote-box pl-5 pr-5 wow bounceInRight">
         <h2> Espartanos GYM <br><span>Cuna de campeones</span> </h2>
@@ -58,18 +58,17 @@
   </div>
 </div>
 <div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="images/about-us-bg.jpg">
-  <div class="container">
+  <div id="aboutUsContainer" class="container">
     <div class="col-sm-6 offset-sm-6">
       <h2 class="wow bounceInLeft" data-wow-delay=".25s">Acerca de nosotros</h2>
-      <hr/>
       <p class="wow bounceInRight" data-wow-delay=".25s">En Espartanos GYM, nos apasiona ayudarte a alcanzar tus objetivos de bienestar y fitness. Nuestro equipo está comprometido con brindarte un ambiente acogedor y motivador, donde puedas sentirte cómodo mientras te esfuerzas por mejorar tu salud y forma física. </p>
     </div>
   </div>
 </div>
-<div class="container-fluid fh5co-content-box">
+<div class="container-fluid fh5co-content-box" style="background-color: rgba(3,3,3,0.7);">
   <div class="container">
-    <div class="row">
-      <div class="col-md-5 pr-0"><img src="images/thai.jpg" alt="gym" class="img-fluid wow bounceInLeft" /> </div>
+    <div id="aboutUsDownContainer" class="row">
+      <div class="col-md-5 pr-0"><img id="aboutUsIMG" src="images/thai.jpg" alt="gym" class="img-fluid wow bounceInLeft"/> </div>
       <div class="col-md-7 pl-0">
         <div class="wow bounceInRight" data-wow-delay=".25s">
           <div class="card-img-overlay">
@@ -78,28 +77,30 @@
           <img src="images/abUlogo.png" class="img-fluid" /> </div>
       </div>
     </div>
-    <div class="row trainers pl-0 pr-0">
+    <div id="instructorPresentationContainer" class="row trainers pl-0 pr-0">
       <div id="instructorsTitleContainer" class="col-12 bg-50">
         <div class=" wow bounceInDown" data-wow-delay=".25s">
           <h2> INSTRUCTORES </h2>
         </div>
       </div>
-      <div class="col-md-6 pr-5 pl-5">
-        <div class="card text-center wow bounceInLeft" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="images/mPesas.jpg" alt="Card image">
-          <div class="card-body mb-5">
-            <h4 class="card-title">Jennifer</h4>
-            <p class="card-text">Jennifer, entrenadora personal apasionada y certificada, con experiencia en programas de fitness personalizados. Ofrezco motivación y apoyo para alcanzar metas de bienestar y salud, ayudando a sus clientes a superarse en cada sesión.</p>
+        <div class="instructorCard"> 
+          <div class="instructorPresentationIMG">
+            <img class="card-img-top rounded-circle img-fluid" src="images/mPesas.jpg" alt="Card image">
+          </div>
+          <div>
+            <h4>Jennifer</h4>
+            <p><b>Entrenadora personal apasionada y certificada, con experiencia en programas de fitness personalizados. Ofrezco motivación y apoyo para alcanzar metas de bienestar y salud, ayudando a sus clientes a superarse en cada sesión.</b></p>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 pl-5 pr-5">
-        <div class="card text-center wow bounceInRight" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="images/hPesas.jpg" alt="Card image">
-          <div class="card-body mb-5">
-            <h4 class="card-title">Nicolas</h4>
-            <p class="card-text">Nicolas, entrenador personal dedicado y certificado, con experiencia en programas de fitness personalizados. Ayudo a mis alumnos a alcanzar su mejor versión física y deportiva, ofreciendo rutinas y orientación nutricional adaptadas a cada necesidad.</p>
+        <div class="instructorCard"> 
+          <div class="instructorPresentationIMG">
+            <img class="card-img-top rounded-circle img-fluid" src="images/hPesas.jpg" alt="Card image">
+          </div>
+          <div>
+            <h4>Nicolás</h4>
+            <p><b>Entrenador personal dedicado y certificado, con experiencia en programas de fitness personalizados. Ayudo a mis alumnos a alcanzar su mejor versión física y deportiva, ofreciendo rutinas y orientación nutricional adaptadas a cada necesidad.</b></p>
           </div>
         </div>
-      </div>
     </div>
     <div class="row gallery">
       <div class="col-md-4">
@@ -108,10 +109,11 @@
             <h4 class="card-title">Disciplina</h4>
             <p class="card-text">Llevamos al límite las destrezas de nuestros alumnos día a día, siempre priorizando la motivación y un excelente ambiente. </p>
           </div>
-          <img class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".25s" src="images/bjj.jpg" alt="Card image"> </div>
+          <img class="galleryIMG" class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".25s" src="images/bjj.jpg" alt="Card image"> </div>
       </div>
       <div class="col-md-4">
-        <div class="card"> <img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s" src="images/imgPesas2.jpg" alt="Card image">
+        <div class="card"> 
+          <img class="galleryIMG" class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s" src="images/imgPesas2.jpg" alt="Card image">
           <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".25s">
             <h4 class="card-title">Constancia</h4>
             <p class="card-text">Creemos firmemente que cualquier persona puede alcanzar su máximo potencial, con una mezcla de constancia, perseverancia y trabajo duro. </p>
@@ -124,7 +126,7 @@
             <h4 class="card-title">Pasión</h4>
             <p class="card-text">Contamos con un equipo de profesionales altamente capacitados y apasionados por llevar a sus alumnos al siguiente nivel. </p>
           </div>
-          <img class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".25s" src="images/imgPesas.jpg" alt="Card image"> </div>
+          <img class="galleryIMG" class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".25s" src="images/imgPesas.jpg" alt="Card image"> </div>
       </div>
     </div>
   </div>
@@ -132,7 +134,7 @@
 <footer class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+      <div id="footerLogoContainer" class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
         <div class="d-flex flex-wrap align-content-center"> <a href="#"><img src="images/LOGOwO.png" alt="logo" style="width: 100%; height: 100%" /></a>
           <p>Promoviendo el crecimiento de nuestros alumnos desde 2010</p>
         </div>
