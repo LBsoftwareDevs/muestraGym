@@ -26,7 +26,8 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#about-us">Nosotros</a> </li>
+          <!-- TODO!! -->
+          <li class="nav-item"> <a class="nav-link" href="#instructorsTitleContainer">Instructores</a> </li>
           <!-- <li class="nav-item"> <a class="nav-link" href="#">Courses</a> </li> -->
           <li class="nav-item"> <a class="nav-link" href="#contact">Contacto</a> </li>
         </ul>
@@ -42,7 +43,7 @@
   </div>
 </div>
 <div class="container-fluid fh5co-network">
-  <div class="container">
+  <div id="presentationDownContainer" class="container">
     <div class="row">
       <div class="col-md-6">
         <h4 class="wow bounceInUp">INICIÁ HOY</h4>
@@ -57,9 +58,16 @@
     </div>
   </div>
 </div>
-<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="images/about-us-bg.jpg">
-  <div id="aboutUsContainer" class="container">
-    <div class="col-sm-6 offset-sm-6">
+<!-- todo!! -->
+   <div id="aboutUsMobile" class="aboutUsContainer">
+    <h2>Acerca de nosotros</h2>
+    <p>En Espartanos GYM, nos apasiona ayudarte a alcanzar tus objetivos de bienestar y fitness. Nuestro equipo está comprometido con brindarte un ambiente acogedor y motivador, donde puedas sentirte cómodo mientras te esfuerzas por mejorar tu salud y forma física.</p>
+    <p>No solo somos un gimnasio; somos un lugar donde puedes encontrar apoyo, motivación y un sentido de pertenencia. ¡Únete a nosotros hoy mismo y comienza tu viaje hacia una vida más saludable y activa!</p>
+  </div>
+<div id="aboutUsDesktop" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="images/about-us-bg.jpg">
+  <div class="aboutUsContainer">
+    <!-- <div id="fixAboutUsBR" style="border: 2px solid brown; width: 100%; height: 300px; position: absolute; background: black; z-index: 100"></div> -->
+    <div id="aboutUsContent" class="col-sm-6 offset-sm-6">
       <h2 class="wow bounceInLeft" data-wow-delay=".25s">Acerca de nosotros</h2>
       <p class="wow bounceInRight" data-wow-delay=".25s">En Espartanos GYM, nos apasiona ayudarte a alcanzar tus objetivos de bienestar y fitness. Nuestro equipo está comprometido con brindarte un ambiente acogedor y motivador, donde puedas sentirte cómodo mientras te esfuerzas por mejorar tu salud y forma física. </p>
     </div>
@@ -74,10 +82,12 @@
           <div class="card-img-overlay">
             <p>No solo somos un gimnasio; somos un lugar donde puedes encontrar apoyo, motivación y un sentido de pertenencia. ¡Únete a nosotros hoy mismo y comienza tu viaje hacia una vida más saludable y activa!</p>
           </div>
-          <img src="images/abUlogo.png" class="img-fluid" /> </div>
+          <img id="aboutUsLogo" src="images/abUlogo.png" class="img-fluid" /> 
+        </div>
       </div>
     </div>
-    <div id="instructorPresentationContainer" class="row trainers pl-0 pr-0">
+    <hr style="border: 2px solid orange">
+    <div id="instructorPresentationContainer">
       <div id="instructorsTitleContainer" class="col-12 bg-50">
         <div class=" wow bounceInDown" data-wow-delay=".25s">
           <h2> INSTRUCTORES </h2>
@@ -85,7 +95,7 @@
       </div>
         <div class="instructorCard"> 
           <div class="instructorPresentationIMG">
-            <img class="card-img-top rounded-circle img-fluid" src="images/mPesas.jpg" alt="Card image">
+            <img src="images/mPesas.jpg" alt="Card image">
           </div>
           <div>
             <h4>Jennifer</h4>
@@ -94,9 +104,9 @@
         </div>
         <div class="instructorCard"> 
           <div class="instructorPresentationIMG">
-            <img class="card-img-top rounded-circle img-fluid" src="images/hPesas.jpg" alt="Card image">
+            <img src="images/hPesas.jpg" alt="Card image">
           </div>
-          <div>
+          <div class="instructorPresentationContent">
             <h4>Nicolás</h4>
             <p><b>Entrenador personal dedicado y certificado, con experiencia en programas de fitness personalizados. Ayudo a mis alumnos a alcanzar su mejor versión física y deportiva, ofreciendo rutinas y orientación nutricional adaptadas a cada necesidad.</b></p>
           </div>

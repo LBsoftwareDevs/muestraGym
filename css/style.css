@@ -15,7 +15,7 @@
   z-index: 1000;
 }
 
-#aboutUsContainer{
+.aboutUsContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,7 @@
 }
 
 #instructorPresentationContainer{
+  margin-top: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,17 +49,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   margin-bottom: 5%;
   margin-top: 5%;
   color: rgb(220,220,220);
+  h4{
+    color: orange;
+  }
 }
 
 .instructorPresentationIMG{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   img{
     width: 100%;
     height: 100%;
+    border-radius: 50%;
   }
 }
 
@@ -89,6 +96,13 @@
   cursor: pointer;
 }
 
+#fixAboutUsBR{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media(max-width: 320px){
   #presentationContainer{
     height: 80vh;
@@ -102,14 +116,8 @@
     display: none;
   }
 
-  #aboutUsDownContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 30vh;
-    img{
-      display: none;
-    }
+  #aboutUsMobile{
+    height: 70vh;
   }
 
   .galleryIMG{
@@ -131,7 +139,7 @@
     min-height: 500px;
   }
 
-  #aboutUsContainer{
+  .aboutUsContainer{
     height: 45vh;
   }
 
@@ -139,14 +147,9 @@
     display: none;
   }
 
-  #aboutUsDownContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 30vh;
-    img{
-      display: none;
-    }
+  #aboutUsMobile{
+    padding: 1%;
+    height: 70vh;
   }
 
   .galleryIMG{
@@ -162,6 +165,105 @@
     width: 15%;
   }
 }
+
+@media(min-width: 481px) and (max-width: 768px){
+  #presentationContainer{
+    min-height: 500px;
+  }
+
+  #presentationDownContainer{
+    height: 83vh;
+    figure{
+      padding-top: 15%;
+    }
+  }
+
+  .aboutUsContainer{
+    font-size: medium;
+    height: 55vh;
+    min-height: 400px;
+  }
+
+  #aboutUsMobile{
+    h2{
+      color: orange;
+    }
+    p{
+      color: white;
+    }
+    padding: 1%;
+    height: 70vh;
+  }
+
+  .galleryIMG{
+    display: none;
+  }
+
+  #footerLogoContainer{
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  #socialMediaLogo{
+    width: 13%;
+    margin-right: 5%;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 980px){
+  #presentationContainer{
+    min-height: 500px;
+  }
+
+  #presentationDownContainer{
+    figure{
+      padding-top: 15%;
+    }
+  }
+
+  .aboutUsContainer{
+    font-size: medium;
+    height: 55vh;
+    min-height: 400px;
+  }
+
+  #aboutUsMobile{
+    h2{
+      color: orange;
+    }
+    p{
+      color: white;
+    }
+    padding: 1%;
+    height: 70vh;
+  }
+
+  .instructorPresentationIMG{
+    img{
+      width: 200%;
+      height: 200%;
+    }
+  }
+
+  .galleryIMG{
+    display: none;
+  }
+
+  #footerLogoContainer{
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  #socialMediaLogo{
+    width: 13%;
+    margin-right: 5%;
+  }
+}
+
+
+
+
+/* BREAKPOINTS ESPECIALES */
 
 @media(min-width: 400px){
   .instructorCard{
@@ -184,6 +286,40 @@
   .instructorPresentationIMG{
     min-width: 150px;
     max-width: 150px;
+  }
+}
+
+@media(min-width: 768px){
+  .instructorCard{
+    margin-top: 0.5%;
+  }
+}
+
+@media(min-width: 993px){
+  #aboutUsMobile{
+    display: none;
+  }
+
+  #aboutUsIMG{
+    display: block;
+  }
+}
+
+@media(max-width: 992px){
+  #aboutUsMobile{
+    display: flex;
+  }
+
+  #aboutUsDesktop{
+    display: none;
+  }
+
+  #aboutUsIMG{
+    display: none;
+  }
+
+  #aboutUsDownContainer{
+    display: none;
   }
 }
 
