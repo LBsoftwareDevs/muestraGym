@@ -1,4 +1,17 @@
 /* ###################### PERSONALIZACIÓN ############################ */
+#bodyContainer{
+  width: 100%;
+  overflow: hidden;
+}
+
+#menuContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10,10,10,0.7);
+}
+
 #instructorsTitleContainer{
   background: none;
   display: flex;
@@ -36,6 +49,9 @@
 #socialMediaLogo:hover{
   cursor: pointer;
 }
+
+
+/* ###################### PERSONALIZACIÓN ############################ */
 
 body {
   font-family: 'Lato', sans-serif;
